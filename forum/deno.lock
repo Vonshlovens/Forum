@@ -15,6 +15,22 @@
       "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
     }
   },
+  "redirects": {
+    "https://deno.land/std/http/server.ts": "https://deno.land/std@0.224.0/http/server.ts"
+  },
+  "remote": {
+    "https://cdn.skypack.dev/-/@supabase/auth-js@v2.67.3-luvDQMY2jIl8YAjGsNbg/dist=es2019,mode=imports/optimized/@supabase/auth-js.js": "64bd3a1197cf15e2b54b581d275e6039f5a9d11d0f69aeffb8974b40f02ed79e",
+    "https://cdn.skypack.dev/-/@supabase/functions-js@v2.4.4-wkIkwEeAXpzxslGS7ZTd/dist=es2019,mode=imports/optimized/@supabase/functions-js.js": "62543d4ebd435e2990ea1aecb9e5938066928f63eed72047e9d723b06d4c7e59",
+    "https://cdn.skypack.dev/-/@supabase/node-fetch@v2.6.15-c5DrO8K0MoiPZxDi1V2L/dist=es2019,mode=imports/optimized/@supabase/node-fetch.js": "13c594130f698a0a5c59a76ceeff4c9b8749204b1c2754339a71cc1b388d6c02",
+    "https://cdn.skypack.dev/-/@supabase/postgrest-js@v1.18.1-Tor3AO4hKeuUEFXCDs2v/dist=es2019,mode=imports/optimized/@supabase/postgrest-js.js": "3fcfaac700b99e493186a24316ef809d1a549e7e2d89a1b06e1e08e947e70aa7",
+    "https://cdn.skypack.dev/-/@supabase/realtime-js@v2.11.2-hCIgdjUqcsjGhezZO7vB/dist=es2019,mode=imports/optimized/@supabase/realtime-js.js": "4de7f99de2282a55fa02cf7ae6070fe4936c07c83c9863ab8297c063d1a2ccc3",
+    "https://cdn.skypack.dev/-/@supabase/storage-js@v2.7.1-PqiU3azcKjwu0FbblYoI/dist=es2019,mode=imports/optimized/@supabase/storage-js.js": "ab767701e80e953fd90840b5ca1d1fcb29c1a1b588c8c125eaeafc4caff169bb",
+    "https://cdn.skypack.dev/-/@supabase/supabase-js@v2.48.1-Y3P1PoFF2eatCaxdnjxz/dist=es2019,mode=imports/optimized/@supabase/supabase-js.js": "7539ea7b049c2eae7b233cc3948bee21fb9708214dd2448462f793ce5bf8708f",
+    "https://cdn.skypack.dev/-/ws@v8.18.0-QNBS0aBUkqIltOX8bZGC/dist=es2019,mode=imports/optimized/ws.js": "1d28a62de8fe1860778bab1543a277d81874c9a53a84810f945a2855975b1b6d",
+    "https://cdn.skypack.dev/@supabase/supabase-js": "544207901564d5de9dfd3b24ac1f680f182bdd91539cf860aa58007b49390c36",
+    "https://deno.land/std@0.224.0/async/delay.ts": "f90dd685b97c2f142b8069082993e437b1602b8e2561134827eeb7c12b95c499",
+    "https://deno.land/std@0.224.0/http/server.ts": "f9313804bf6467a1704f45f76cb6cd0a3396a3b31c316035e6a4c2035d1ea514"
+  },
   "workspace": {
     "dependencies": [
       "jsr:@std/assert@1"
