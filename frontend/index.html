@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forum Topics</title>
+  <!-- Using Tailwind CSS via CDN for rapid prototyping -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <header class="p-4 bg-white shadow mb-4">
+    <h1 class="text-3xl font-bold">Forum Topics</h1>
+  </header>
+
+  <main class="container mx-auto px-4">
+    <ul id="topics-list" class="space-y-4">
+      <!-- Topics will be dynamically inserted here -->
+    </ul>
+  </main>
+
+  <!-- Client-side script -->
+  <script>
+    // Fetch topics from your API endpoint
+    fetch('http://localhost:8000/topics')
+      .then(response => response.json())
+      .then(data => {
+        const list = document.getElementById('topics-list');
+        // Check if data is an array
+        if (Array.isArray(data)) {
+          data.forEach(topic => {
+            const li = document.createElement('li');
+            li.className = "p-4 bg-white rounded shadow";
+            li.innerHTML = `<h2 class="text-xl font-semibold">${topic.title}</h2>
+                            <p>${topic.content || "No content available."}</p>
+                            <small class="text-gray-500">Created at: ${new Date(topic.created_at).toLocaleString()}</small>`;
+            list.appendChild(li);
+          });
+        } else {
+          list.innerHTML = "<li>Error loading topics.</li>";
+        }
+      })
+      .catch(error => {
+        console.error("Error fetching topics:", error);
+      });
+  </script>
+</body>
+</html>
